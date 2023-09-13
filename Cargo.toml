@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = [
+    "rdl-core",
+    "rdl-cli"
+]
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+lto = true
+strip = true
+opt-level = 3
+codegen-units = 1

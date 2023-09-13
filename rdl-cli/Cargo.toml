@@ -1,0 +1,17 @@
+
+[package]
+name = "rdl-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap =  {version =  "4.4.2" , features = ["derive"] }
+
+
+[[bin]]
+name = "cli"
+path = "src/cli.rs"
+
+[dependencies.rdl-core]
+version = "0.1.0"
+path = "../rdl-core"
